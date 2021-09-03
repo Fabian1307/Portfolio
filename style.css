@@ -1,0 +1,173 @@
+body {
+  width: 75%;
+  margin: auto;
+  font-family: Trebuchet MS, Helvetica, sans-serif;
+  background-color: dimgray;
+}
+
+section {
+  margin: 10em 0em; /* breaks up sections vertically */
+  /*border: 2px solid red;  temporary for visual help. REMOVE BEFORE SUBMISSION*/
+}
+
+header div {
+  padding: 2em;
+  border: .1em solid black;
+  background: url("images/background.jpg") no-repeat center center fixed; /* "fixed" gives the window effect as you scroll by */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  background-color: #E5DCE2; /* backup background if image is unavailable*/;
+}
+
+footer {
+  text-align: center;
+}
+
+
+
+/* Text and content */
+
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+li {
+margin-bottom: 1em; /* gives list items some breathing room */
+}
+.centered {
+  text-align: center;
+}
+
+
+
+/* navigation */
+
+nav {
+  margin-bottom: 1em; /* give a little breathing room for nav and hr*/
+}
+nav h3 {
+  color: #B8BFB0;
+  margin-bottom: -.3em;
+}
+nav ol {
+  list-style-type: none; /* clears default styles from nav list*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav li {
+    margin: .5em; /* creates space between nav items*/
+    background-color: #EBEDE9;
+    border-radius: 1em; /*rounds the corners of nav item bg*/
+    text-align: center;
+}
+nav li a {
+  padding: .5em;  /*  increases size of background for each nav item*/
+  display: block; /* makes entire area clickable */
+  letter-spacing: .3em;
+}
+
+@media all and (min-width: 700px) {
+  nav ol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav li {
+   flex: 1;   /* nav item backgrounds fill full width of nav bar */
+  }
+}
+
+
+/* Headings */
+
+h3, h2, h1 {
+  text-align: center; /* center all headings*/
+}
+
+h2 {
+  color:black;
+  letter-spacing: .4em;
+}
+
+
+
+/* containers for flexbox */
+
+.group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+@media all and (min-width: 700px) {
+  .group {
+    flex-direction: row;
+  }
+}
+
+.item {
+  flex: 1;
+  /*border: 2px solid #EBEDE9;  temporary to visualize my flexbox layout */
+  margin: 2px;  /*temporary to give some room to visualize my flexbox layout */
+  padding: 5px;  /* gives space between item border and contents. temporary depending on how item borders change in future versions */
+}
+
+.project {
+  border: 2px solid #EBEDE9;
+}
+
+
+
+/* Images  */
+
+.centered-image {
+  margin: auto;
+  width: 100%;
+  max-width: 20em;
+  display: block;
+  /*border: 2px dotted blue;  temporary for visual help. REMOVE BEFORE SUBMISSION*/
+}
+.small {
+  max-width: 5em;
+}
+.ghost {
+  opacity: 0.75;
+}
+.ghost2 {
+    opacity: 0.05;
+}
+.mat {
+    background-color: #EBEDE9;
+}
+
+
+/* Link styling */
+
+a {
+   text-decoration: none ; /* removes underline */
+}
+a:link {
+  color: blue;
+}
+nav a:link {
+  color: black;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: green;
+  cursor: pointer;
+}
+a:active {
+  /* color: rgb(13, 63, 34); */
+}
+
+
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+}
