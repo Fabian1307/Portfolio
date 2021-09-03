@@ -2,7 +2,8 @@ body {
   width: 75%;
   margin: auto;
   font-family: Trebuchet MS, Helvetica, sans-serif;
-  background-color: dimgray;
+  background-color:mintcream;
+  height: 10px;
 }
 
 section {
@@ -131,15 +132,6 @@ h2 {
 }
 .small {
   max-width: 5em;
-}
-.ghost {
-  opacity: 0.75;
-}
-.ghost2 {
-    opacity: 0.05;
-}
-.mat {
-    background-color: #EBEDE9;
 }
 
 
